@@ -6,16 +6,16 @@
           </div>
         </div>
       
-        <h1 class="dashboard-title text-center">Organization Lookup</h1>
+        <h1 class="dashboard-title text-center" *ngIf="inited">Organization Lookup</h1>
       
         <div class="row" *ngIf="inited">
           <div class="col-sm-12">
       
             <div class="text-center">
-              <ul class="stats">
+              <!-- <ul class="stats">
                 <li class="stat"><span class="numbers">{{recordCounts.orgs | number}}</span> {{'dashboard.title-orgs' | translate}}</li>
                 <li class="stat"><span class="numbers">{{recordCounts.certs | number}}</span> {{'dashboard.title-certs' | translate}}</li>
-              </ul>
+              </ul> -->
               <div class="search-outer">
                 <div [class]="'large-search' + (searchFocused ? ' active' : '')">
                   <span class="fa fa-search" *ngIf="!loading" (click)="focusSearch($event)"></span>
