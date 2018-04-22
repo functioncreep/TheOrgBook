@@ -1,4 +1,6 @@
 $highlight_color: #8ec641;
+$button_color: #a5d563;
+$hover_color: #b7e479;
 
 h1.dashboard-title {
     padding: 20px 0 20px 0;
@@ -31,4 +33,22 @@ h1.dashboard-title {
     border: 1px solid #ced4da;
     border-radius: .75rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.search-type {
+    .btn-group {
+        .btn-default {
+            box-shadow: none;
+
+            input {
+                display: none;
+            }
+        }
+        .btn-default.active {
+            background-color: $button_color;
+        }
+        .btn-default:hover {
+            background-color: $hover_color;
+        }
+    }
 }
