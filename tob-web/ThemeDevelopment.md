@@ -10,7 +10,7 @@ The choice of the active theme is driven by the value of the environmental varia
 
 For example, to change the active theme from BC to Ontario, set the value of $TOB_THEME to **ongov** and rebuild the code:
 
-``` export TOB_THEME=ongov ```
+``` export TOB_THEME=gsx ```
 
 For the TheOrgBook instance deployed in OpenShift, set $TOB_THEME value in **. param* files under *tob-web/openshift* directory.
 
